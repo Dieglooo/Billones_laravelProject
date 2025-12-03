@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Button</title>
+</head>
+<body>
+
+  <input id="email" type="text" placeholder="Enter email">
+  <button id="submitBtn">Submit</button>
+
+  <p id="output"></p>
+
+  <script>
+    // This runs immediately when the page loads so we know JS is working
+    console.log("JavaScript loaded successfully.");
+
+    document.getElementById("submitBtn").addEventListener("click", function () {
+      console.log("Button clicked!");
+
+      const email = document.getElementById("email").value;
+      document.getElementById("output").textContent = "You entered: " + email;
+    });
+  </script>
+
+</body>
+</html>
